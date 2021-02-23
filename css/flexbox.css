@@ -1,0 +1,87 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flez-wrap: wrap;
+  flex-wrap:wrap;
+
+  -webkit-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+
+  border: 0.5rem;
+  margin: 1rem;
+}
+
+.product-container .product-block {
+  height: 300px;
+  width: 200px;
+  margin: 2rem;
+}
+
+.product-container .product-block img {
+  height: 300px;
+  width: 200px;
+}
+
+.product-container .product-block p {
+  text-align: left;
+}
+
+.label-container {
+  padding: 0.5rem;
+}
+
+.checkout-container {
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+.cart-container div {
+  -ms-flex: 50%;
+  flex: 50%;
+
+  margin-bottom: 5rem;
+}
+
+.billing-container {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.payment-container {
+  -webkit-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+
+  -ms-flex: 100%;
+  flex: 100%;
+}
+
+  form {
+    width: 800px;
+  }
+
+  @media (max-width: 900px) {
+    form {
+      justify-content: flex-start;
+      width: 500px;
+    }
+  }
+
+@media (max-width: 700px) {
+  form {
+    justify-content: flex-start;
+    width: 300px;
+  }
+}
+/* Resource: IAT339 Week 3 Coding Tutorial
+             IAT339 Week 3 Lab Assignment
+             https://jonitrythall.com/flexbox-cheatsheet */

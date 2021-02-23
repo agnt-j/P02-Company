@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Style Guide</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <h1>P01 - Style Guide</h1>
+
+    <p>This company manufactures and sells clothing in a minimalistic style. They strive to produce clothes that are appealing and affordable with durable, yet inexpsensive materials. It is ideal for customers who like to keep things basic, while staying fashionable in neutral tones.</p>
+
+    <nav>
+      <a class="button-nav" href="#index.html">Branding</a>
+      <a class="button-nav" href="#interactive_elements">Interactive Elements</a>
+      <a class="button-nav" href="#text_elements">Text Elements</a>
+      <a class="button-nav" href="#combined_elements">Combined Elements</a>
+      <a class="button-nav" href="product_listing.html">Product Listing Template</a>
+      <a class="button-nav" href="checkout.html">Checkout Template</a>
+      <a class="button-nav" href="#citations">Citations</a>
+    </nav>
+  </header>
+
+  <!-- BRANDING SECTION // -->
+  <section id="branding">
+    <h2>Branding</h2>
+
+    <section class="element">
+      <h3>Fonts</h3>
+
+      <h2>This is the header.</h2>
+      <p>This is the paragraph text.</P>
+
+      </section>
+
+      <section class="element">
+        <h3>Colour Palette</h3>
+
+        <div style = "color: #F5F5F5; background: #131313">
+          <p>#131313</p>
+        </div>
+        <div style = "color: #F5F5F5; background: #989898">
+          <p>#989898</p>
+        </div>
+        <div style = "color: #131313; background: #F5F5F5">
+          <p>#F5F5F5</p>
+        </div>
+        <div style = "color: #F5F5F5; background: #355E3B">
+          <p>#355E3B</p>
+        </div>
+
+        <!-- Resource: https://www.w3schools.com/colors/colors_palettes.asp-->
+      </section>
+
+      <section class="element">
+        <h3>Imagery</h3>
+        <img src="https://stylecaster.com/wp-content/uploads/2017/03/had-tee.jpg?w=830" width="250" height="350" alt="Minimalist Fashion">
+        <img src="https://cdn.shopify.com/s/files/1/0690/5295/files/mens_style_magazine_minimalist_wardrobe_for_men_5_1024x1024.jpg?3480341038909994401" width="250" height="350" alt="Minimalist Fashion">
+        <img src="https://i3.wp.com/www.missprettypink.com/wp-content/uploads/minimalist-fashion14.jpg" width="250" height="350" alt="Minimalist Fashion">
+
+      </section>
+
+    </section>
+    <!-- // BRANDING SECTION -->
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <section class="element">
+        <h3>In-text link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.text-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;&lt;a class="text-link" href="#"&gt;This is an in-text link.&lt;/a&gt;&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <p><a class="text-link" href="#">This is an in-text link.</a></p>
+
+      </section>
+
+      <!-- Default Button styling section -->
+      <section class="element">
+
+        <h3>Navigation Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-nav</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="button-nav" href="#"&gt;Default Button&lt;/a&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <a class="button-nav" href="#">Default Button</a>
+
+      </section>
+
+      <section class="element">
+        <h3>Submit/Reset Buttons</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.button-select</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;fieldset class="button-select"&gt;</code>
+        <code>&lt;input class="btn" type="submit" value="Submit"&gt;</code>
+        <code>&lt;input class="btn" type="reset" value="Reset"&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <fieldset class="button-select">
+          <input class="btn" type="submit" value="Submit">
+          <input class="btn" type="reset" value="Reset">
+        </fieldset>
+
+        <!-- Resource: https://www.w3schools.com/tags/tag_input.asp
+        https://learn.shayhowe.com/html-css/building-forms/-->
+      </section>
+
+      <section class="element">
+        <h3>Text Input Field with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.input-box</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;form&gt;</code>
+        <code>&lt;fieldset class="input-box"&gt;</code>
+        <code>&lt;label&gt;Username:&lt;/label&gt;</code>
+        <code>&lt;input type="text"&gt;&lt;br&gt;&lt;br&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+        <code>&lt;/form&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <form class="small-form-box">
+          <fieldset class="input-box">
+            <label>Username:</label>
+            <input type="text"><br><br>
+            <label>Password:</label>
+            <input type="text"><br><br>
+          </fieldset>
+        </form>
+
+        <!-- Resource: https://www.w3schools.com/tags/tag_input.asp
+        https://learn.shayhowe.com/html-css/building-forms/-->
+      </section>
+
+      <section class="element">
+        <h3>Radio Button with Label</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.radio-box</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;form&gt;</code>
+        <code>&lt;fieldset class="radio-box"&gt;</code>
+        <code>&lt;p&gt;Choose your size:&lt;/p&gt;</code>
+        <code>&lt;label&gt;</code>
+        <code>&lt;input type="radio"name="size" value="S"&gt;S</code>
+        <code>&lt;/label&gt;&lt;br&gt;</code>
+        <code>&lt;br&gt;</code>
+        <code>&lt;/fieldset&gt;</code>
+        <code>&lt;/form&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <form class ="small-form-box">
+          <fieldset class="radio-box">
+            <p>Choose your size:</p>
+            <label>
+              <input type="radio" name="size" value="S">S
+            </label><br>
+            <label>
+              <input type="radio" name="size" value="M">M
+            </label><br>
+            <label>
+              <input type="radio" name="size" value="L">L
+            </label><br>
+            <br>
+          </fieldset>
+        </form>
+
+        <!-- Resource: https://www.w3schools.com/tags/att_input_type_radio.asp
+        https://learn.shayhowe.com/html-css/building-forms/-->
+      </section>
+
+      <section class="element">
+        <h3>Image as a Link</h3>
+
+        <h4>CSS selector:</h4>
+        <p>.image-link</p>
+
+        <h4>Sample code:</h4>
+        <code>&lt;a class="image-link" href="#";&lt;img src="https://placeholder.com/200x300" alt="Image Link"</code>
+
+        <h4>Rendered element:</h4>
+        <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+
+        <!-- Resource: https://www.w3schools.com/html/html_images.asp
+        img source: https://placeholder.com/-->
+      </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section class="element">
+        <h3>Headings</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;h1&gt;Header 1&lt;/h1&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+      </section>
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;p&gt;Lorem ipsum...&lt;/p&gt;</code>
+
+        <h4>Rendered element:</h4>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Purus sit amet volutpat consequat mauris nunc. Auctor urna nunc id cursus metus. Scelerisque felis imperdiet proin fermentum. Natoque penatibus et magnis dis parturient. Aliquet bibendum enim facilisis gravida neque convallis a cras. Integer feugiat scelerisque varius morbi enim nunc faucibus a. Habitasse platea dictumst quisque sagittis purus sit amet. Molestie a iaculis at erat pellentesque adipiscing. Quisque egestas diam in arcu cursus euismod quis viverra. Massa vitae tortor condimentum lacinia quis. Nisl suscipit adipiscing bibendum est. Id leo in vitae turpis massa sed elementum.</p>
+
+        <p>Interdum consectetur libero id faucibus nisl tincidunt eget. Vel facilisis volutpat est velit. Gravida in fermentum et sollicitudin ac orci phasellus. Nec feugiat in fermentum posuere urna nec. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Lacus luctus accumsan tortor posuere ac ut consequat. Habitasse platea dictumst quisque sagittis purus sit. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Consectetur adipiscing elit ut aliquam purus sit. Consectetur a erat nam at. Eu scelerisque felis imperdiet proin fermentum leo vel orci porta. Posuere ac ut consequat semper viverra nam. Ut ornare lectus sit amet est placerat. Praesent elementum facilisis leo vel fringilla est ullamcorper eget nulla. Ac auctor augue mauris augue neque gravida in fermentum.</p>
+
+      </section>
+
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>Sample code:</h4>
+        <code>&lt;ol&gt;</code>
+        <code>&lt;li&gt;Sweatshirt (M/Gray)&lt;/li&gt;</code>
+        <code>&lt;li&gt;Sweatpants (M/Black)&lt;/li&gt;</code>
+        <code>&lt;li&gt;Sundress (S/White)&lt;/li&gt;</code>
+        <code>&lt;/ol&gt;</code>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>Sweatshirt (M/Gray)</li>
+          <li>Sweatpants (M/Black)</li>
+          <li>Sundress (S/White)</li>
+        </ol>
+
+        <!-- Resource: https://www.w3schools.com/html/html_lists.asp  -->
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>Rendered element:</h4>
+
+        <nav>
+          <div class="dropdown">
+            <a class="button-nav" href="#">Sale</a>
+            <div class="dropdown-content">
+              <a href="#">Women</a>
+              <a href="#">Men</a>
+              <a href="#">Unisex</a>
+            </div>
+          </div>
+
+        </nav>
+
+        <!-- Resource: https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
+      </section>
+
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <h4>Rendered element:</h4>
+
+        <div class="product-container">
+          <div class="product-block">
+            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+            <p><a class="text-link" href="#">Womens Pants (Black)</a><br>$16.99</p>
+          </div>
+          <div class="product-block">
+            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+            <p><a class="text-link" href="#">Womens Shirt (White)</a><br>$5.99</p>
+          </div>
+          <div class="product-block">
+            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+            <p><a class="text-link" href="#">Unisex Jacket (Gray)</a><br>$26.99</p>
+          </div>
+          <div class="product-block">
+            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+            <p><a class="text-link" href="#">Mens Pants (Gray)</a><br>$18.99</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <h4>Rendered element:</h4>
+        <form>
+          <fieldset class="input-box">
+            <label>Card Name:</label>
+            <input type="text"><br><br>
+            <label>Card Number:</label>
+            <input type="text"><br><br>
+            <label>Expiration date:</label>
+            <input type="text"><br><br>
+            <label>CVV Code:</label>
+            <input type="text"><br><br>
+          </fieldset>
+
+          <fieldset class="button-select">
+            <input class="btn" type="submit" value="Submit Payment">
+          </fieldset>
+        </form>
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <h4>Rendered element:</h4>
+        <ol>
+          <li>
+            <p><a class="text-link" href="#">Unisex Sweatshirt</a><br>
+              Colour: White<br>
+              Size: M<br>
+              Price: $7.99</p>
+            </li>
+
+            <li>
+              <p><a class="text-link" href="#">Unisex Sweatpants</a><br>
+                Colour: Black<br>
+                Size: M<br>
+                Price: $12.99</p>
+              </li>
+            </ol>
+
+            <p>Total: $20.98</P>
+
+              <fieldset class="button-select">
+                <input class="btn" type="submit" value="Proceed to Checkout">
+              </fieldset>
+
+            </section>
+
+          </section>
+          <!-- // COMBINED ELEMENTS SECTION -->
+
+          <section id="citations">
+            <h2>Citations</h2>
+
+            <ul>
+              <li>Adams, Vernon. Designer. <strong>Nunito [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Nunito#standard-styles">https://fonts.google.com/specimen/Nunito#standard-styles</a></li>
+              <li>Boys' Co. <strong>Men's Style [Photo]</strong>. Retrieved from <a class="text-link" href="https://boysco.com/blogs/itsaguything/mens-style-guide-7-essentials-to-building-minimalist-wardrobe">https://boysco.com/blogs/itsaguything/mens-style-guide-7-essentials-to-building-minimalist-wardrobe</a></li>
+              <li>Le Bailly, Jacques. Designer. <strong>Nunito-Sans [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Nunito+Sans#standard-styles">https://fonts.google.com/specimen/Nunito+Sans#standard-styles</a></li>
+              <li>Miss Pretty Pink. <strong>Minimalist Fashion 14 [Photo]</strong>. Retrieved from <a class="text-link" href="https://www.missprettypink.com/minimalist-fashion/">https://www.missprettypink.com/minimalist-fashion/</a></li>
+              <li>Style Caster. <strong>Had Tee [Photo]</strong>. Retrieved from <a class="text-link" href="https://stylecaster.com/30-minimalist-staples-under-50/">https://stylecaster.com/30-minimalist-staples-under-50/</a></li>
+            </ul>
+
+          </section>
+
+        </body>
+        </html>
