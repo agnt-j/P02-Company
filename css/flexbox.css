@@ -29,11 +29,11 @@ div {
 
 .search-container{
   justify-content: flex-end;
-  width: 90vw;
+  width: 75vw;
 }
 
 .product-container{
-  width:80vw;
+  width:75vw;
 }
 
 .product-block {
@@ -53,6 +53,7 @@ div {
 
 .list-container{
   width: 100px;
+  height: auto;
 }
 
 .list-container .list-block{
