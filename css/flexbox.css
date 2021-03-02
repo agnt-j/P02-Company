@@ -21,6 +21,12 @@ div {
   margin: 1rem;
 }
 
+.nav-container {
+  height: 50px;
+  width: 1050px;
+  margin: 2rem;
+}
+
 .search-container{
   justify-content: flex-end;
   width: 90vw;
