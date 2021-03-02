@@ -1,3 +1,5 @@
+/* For Flexbox Containers and Media Queries */
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
