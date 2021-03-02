@@ -23,17 +23,17 @@ div {
 
 .nav-container {
   height: 50px;
-  width: 1050px;
+  width: 80vw;
   margin: 2rem;
 }
 
 .search-container{
   justify-content: flex-end;
-  width: 75vw;
+  width: 90vw;
 }
 
 .product-container{
-  width:75vw;
+  width:80vw;
 }
 
 .product-block {
@@ -53,7 +53,6 @@ div {
 
 .list-container{
   width: 100px;
-  height: auto;
 }
 
 .list-container .list-block{
@@ -110,6 +109,16 @@ div {
   form {
     justify-content: flex-start;
     width: 300px;
+  }
+
+  .nav-container {
+    height: 200px;
+    width: 60vw;
+  }
+
+  .search-container{
+    justify-content: flex-start;
+    width: 90vw;
   }
 }
 /* Resource: IAT339 Week 3 Coding Tutorial
