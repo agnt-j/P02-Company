@@ -19,7 +19,16 @@ div {
   margin: 1rem;
 }
 
-.product-container .product-block {
+.search-container{
+  justify-content: flex-end;
+  width: 90vw;
+}
+
+.product-container{
+  width:80vw;
+}
+
+.product-block {
   height: 300px;
   width: 200px;
   margin: 2rem;
@@ -34,7 +43,19 @@ div {
   text-align: left;
 }
 
-.label-container {
+.list-container{
+  width: 100px;
+}
+
+.list-container .list-block{
+  flex-direction: column;
+}
+
+.list-container .list-block p{
+  text-align: right;
+}
+
+.label-container{
   padding: 0.5rem;
 }
 
