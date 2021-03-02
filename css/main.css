@@ -1,8 +1,4 @@
-/*
-STYLE GUIDE STYLING
-Default styling for the style guide
-*/
-
+/* Main Elements */
 body {
   font-family:'Nunito Sans', sans-serif;
   padding: 2rem;
@@ -53,19 +49,16 @@ fieldset {
   padding: 0;
 }
 
-/*
-INTERACTIVE ELEMENTS -------------------
-*/
-
-/*Button Navigation*/
+/* For Button Navigation */
 .button-nav {
   display: inline-block;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1.5rem;
   margin-bottom: 0.5rem;
-  color: #fff;
-  background-color: #1e1e1e;
+  margin-right: 2rem;
+  color: #1e1e1e;
   text-decoration: none;
-  transition-property: background-color;
+  transition-property: color;
   transition-duration: 0.5s;
   font-weight: bold;
 }
@@ -96,7 +89,7 @@ INTERACTIVE ELEMENTS -------------------
   background-color: #355E3B;
 }
 
-/*Text Input/Label*/
+/*Text Inputs Labels*/
 input {
   border-radius: 2px;
   font-family:'Nunito', sans-serif;
@@ -130,6 +123,35 @@ label {
   width: 100%;
 }
 
+/* For Search Box */
+.search-box input {
+  background: #fff;
+  border: 1px solid #989898;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .1);
+  color: #1e1e1e;
+  padding: 6px;
+  margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  width: 200px;
+}
+
+.search-button {
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.search-button .btn {
+  background: linear-gradient(#355E3B, #51905A);
+  border: 0;
+  color: #F5F5F5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 8px 10px;
+  margin-right: 0.5rem;
+}
+
 /* For Radio */
 .radio-box {
   padding: 10px 30px 0 10px;
@@ -153,7 +175,6 @@ label {
 .small-form-box {
   width: 250px;
 }
-/* Resource for form, input, label:https://learn.shayhowe.com/html-css/building-forms/ */
 
 /*Submit/Reset Buttons*/
 .button-select {
@@ -202,12 +223,7 @@ label {
 
 .dropdown:hover .dropbtn {background-color: #989898;}
 
-/* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
-
-/*
-TEXT ELEMENTS -------------------
-*/
-
+/* For Text */
 h1 {
   font-size: 2.5em;
 }
@@ -231,3 +247,6 @@ p {
   margin-top: 0;
   max-width: 100%;
 }
+
+/* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* Resource for form, input, and label:https://learn.shayhowe.com/html-css/building-forms/ */
