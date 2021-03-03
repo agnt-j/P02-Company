@@ -1,3 +1,5 @@
+/* For Flexbox Containers and Media Queries */
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -17,6 +19,12 @@ div {
 
   border: 0.5rem;
   margin: 1rem;
+}
+
+.nav-container {
+  height: 50px;
+  width: 80vw;
+  margin: 2rem;
 }
 
 .search-container{
@@ -101,6 +109,16 @@ div {
   form {
     justify-content: flex-start;
     width: 300px;
+  }
+
+  .nav-container {
+    height: 200px;
+    width: 60vw;
+  }
+
+  .search-container{
+    justify-content: flex-start;
+    width: 90vw;
   }
 }
 /* Resource: IAT339 Week 3 Coding Tutorial

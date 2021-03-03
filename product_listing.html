@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>P02 - Product Listing Template</title>
+  <title>P02 - Product Listing</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
@@ -16,35 +16,40 @@
 
 </head>
 
-<body id="testbg">
+<body>
   <header>
-    <h1>Product Listing Template</h1>
+    <h1>P02 - Company</h1>
 
-    <p>This is the template page for browsing the company's products.</p>
-
-    <nav>
-      <a class="button-nav" href="index.html">Branding</a>
-      <a class="button-nav" href="index.html#interactive_elements">Interactive Elements</a>
-      <a class="button-nav" href="index.html#text_elements">Text Elements</a>
-      <a class="button-nav" href="index.html#combined_elements">Combined Elements</a>
-      <a class="button-nav" href="product_listing.html">Product Listing Template</a>
-      <a class="button-nav" href="checkout.html">Checkout Template</a>
-      <a class="button-nav" href="#citations">Citations</a>
-    </nav>
+    <div class="nav-container">
+      <nav>
+        <a class="button-nav" href="#">Home</a>
+        <a class="button-nav" href="product_listing.html">All</a>
+        <a class="button-nav" href="#">New</a>
+        <a class="button-nav" href="#">Sale</a>
+        <a class="button-nav" href="#">Womens</a>
+        <a class="button-nav" href="#">Mens</a>
+        <a class="button-nav" href="#">Kids</a>
+        <a class="button-nav" href="#">Contact</a>
+        <a class="button-nav" href="checkout.html">Checkout</a>
+      </nav>
+      </div>
 
     <div class="search-container">
-        <fieldset class="input-box">
-          <input type="text" placeholder="Search"><br><br>
-        </fieldset>
+      <fieldset class="search-box">
+        <input type="text" placeholder="Search"><br><br>
+      </fieldset>
+      <fieldset class="search-button">
+        <input class="btn" type="submit" value="Search">
+      </fieldset>
     </div>
   </header>
 
   <section>
 
-    <h2>All Products</h2>
 
     <div class="outter-container">
 
+      <h2>All Products</h2>
       <div class="product-container">
         <div class="product-block">
           <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
@@ -60,7 +65,7 @@
         </div>
         <div class="product-block">
           <a class="image-link" href="#"><img src="https://img.ltwebstatic.com/images2_pi/2019/04/24/15560964993199197621_thumbnail_900x1199.webp" alt="Sunflower Tee"></a>
-          <p><a class="text-link" href="#">Unisex Sunflower Tee</a><br>$6.99</p>
+          <p><a class="text-link" href="#">Kids Sunflower Tee</a><br>$6.99</p>
         </div>
         <div class="product-block">
           <a class="image-link" href="#"><img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fcc%2Fc2%2Fccc29d1d3a231d3f6a17883340eb75a4ef6cb2f9.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_trousers_chinos_slim_all%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Chino Pants"></a>
@@ -82,34 +87,20 @@
 
       <div class="list-container">
         <div class="list-block">
-          <p>Women</p>
-          <p>Men</p>
-          <p>Kids</p>
-          <p>Shirts</p>
-          <p>Jeans</p>
-          <p>Shoes</p>
+          <h3>Categories</h3>
+          <nav>
+            <a class="category-nav" href="#">Women</a>
+            <a class="category-nav" href="#">Men</a>
+            <a class="category-nav" href="#">Kids</a>
+            <a class="category-nav" href="#">Shirts</a>
+            <a class="category-nav" href="#">Jeans</a>
+            <a class="category-nav" href="#">Shoes</a>
+          </nav>
         </div>
       </div>
+
     </div>
 
-
-  </section>
-
-  <section id="citations">
-    <h2>Citations</h2>
-
-    <ul>
-      <li>Adams, Vernon. Designer. <strong>Nunito [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Nunito#standard-styles">https://fonts.google.com/specimen/Nunito#standard-styles</a></li>
-      <li>Chic Wish. <strong>Grid Turtleneck Sweater [Photo]</strong>. Retrieved from <a class="text-link" href="https://ca.chicwish.com/grid-turtleneck-sweater-in-white.html">https://ca.chicwish.com/grid-turtleneck-sweater-in-white.html</a></li>
-      <li>Chic Wish. <strong>Organza Mesh Sleeves V-Neck [Photo]</strong>. Retrieved from <a class="text-link" href="https://ca.chicwish.com/organza-mesh-sleeves-v-neck-knit-top-in-black.html">https://ca.chicwish.com/organza-mesh-sleeves-v-neck-knit-top-in-black.html</a></li>
-      <li>H&M. <strong>Demin Skirt [Photo]</strong>. Retrieved from <a class="text-link" href="https://www2.hm.com/en_ca/productpage.0937446002.html">https://www2.hm.com/en_ca/productpage.0937446002.html</a></li>
-      <li>H&M. <strong>Relaxed-Fit Hoodie [Photo]</strong>. Retrieved from <a class="text-link" href="https://www2.hm.com/en_ca/productpage.0685814062.html">https://www2.hm.com/en_ca/productpage.0685814062.html</a></li>
-      <li>H&M. <strong>Rib-Knit Sweater [Photo]</strong>. Retrieved from <a class="text-link" href="https://www2.hm.com/en_ca/productpage.0941748002.html">https://www2.hm.com/en_ca/productpage.0941748002.html</a></li>
-      <li>H&M. <strong>Slim Fit Chino [Photo]</strong>. Retrieved from <a class="text-link" href="https://www2.hm.com/en_ca/productpage.0815456006.html">https://www2.hm.com/en_ca/productpage.0815456006.html</a></li>
-      <li>Le Bailly, Jacques. Designer. <strong>Nunito-Sans [Font]</strong>. Retrieved from <a class="text-link" href="https://fonts.google.com/specimen/Nunito+Sans#standard-styles">https://fonts.google.com/specimen/Nunito+Sans#standard-styles</a></li>
-      <li>Romwe. <strong>Guys Sunflower Embroidered Tee [Photo]</strong>. Retrieved from <a class="text-link" href="https://ca.romwe.com/Guys-Sunflower-Embroidered-Tee-p-455552-cat-859.html?url_from=caplasmtop07190424740S">https://ca.romwe.com/Guys-Sunflower-Embroidered-Tee</a></li>
-      <li>Shein. <strong>Split Hem Solid Dress [Photo]</strong>. Retrieved from <a class="text-link" href="https://ca.shein.com/Solid-Split-Hem-T-Shirt-Dress-p-1269927-cat-1727.html?url_from=caadplaswdress07200701517S&gclid=CjwKCAiA65iBBhB-EiwAW253W0HiEJiKnF2FjHlQGv8awOL8LNRuKmLusy3wokKj9P4v5kpk64b3fxoCiSsQAvD_BwE">https://ca.shein.com/Solid-Split-Hem-T-Shirt-Dress</a></li>
-    </ul>
 
   </section>
 </body>
