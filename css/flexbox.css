@@ -32,6 +32,10 @@ div {
   width: 90vw;
 }
 
+.outter-container{
+  justify-content: space-around;
+}
+
 .product-container{
   width:80vw;
 }
@@ -53,6 +57,8 @@ div {
 
 .list-container{
   width: 100px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
 }
 
 .list-container .list-block{
@@ -61,6 +67,12 @@ div {
 
 .list-container .list-block p{
   text-align: right;
+}
+
+.sales-info .info-block{
+  flex-direction: column;
+  width: 500px;
+  align-content: flex-start;
 }
 
 .label-container{

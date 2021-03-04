@@ -208,6 +208,7 @@ label {
   margin-right: 0.5rem;
 }
 
+
 .dropdown .dropdown-content {
   position: fixed;
   display: inline-block;
@@ -235,7 +236,12 @@ label {
 
 .dropdown:hover .dropbtn {background-color: #989898;}
 
-/* For Text */
+/* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
+
+/*
+TEXT ELEMENTS -------------------
+*/
+
 h1 {
   font-size: 2.5em;
 }
