@@ -140,18 +140,18 @@
         <h4>Sample code:</h4>
         <code>&lt;form&gt;</code>
         <code>&lt;fieldset class="input-box"&gt;</code>
-        <code>&lt;label&gt;Username:&lt;/label&gt;</code>
-        <code>&lt;input type="text"&gt;&lt;br&gt;&lt;br&gt;</code>
+        <code>&lt;label for="user"&gt;Username:&lt;/label&gt;</code>
+        <code>&lt;input type="text" id="user"&gt;&lt;br&gt;&lt;br&gt;</code>
         <code>&lt;/fieldset&gt;</code>
         <code>&lt;/form&gt;</code>
 
         <h4>Rendered element:</h4>
         <form class="small-form-box">
           <fieldset class="input-box">
-            <label>Username:</label>
-            <input type="text"><br><br>
-            <label>Password:</label>
-            <input type="text"><br><br>
+            <label for="user">Username:</label>
+            <input type="text" id="user"><br><br>
+            <label for="pass">Password:</label>
+            <input type="text" id="pass"><br><br>
           </fieldset>
         </form>
 
@@ -169,8 +169,8 @@
         <code>&lt;form&gt;</code>
         <code>&lt;fieldset class="radio-box"&gt;</code>
         <code>&lt;p&gt;Choose your size:&lt;/p&gt;</code>
-        <code>&lt;label&gt;</code>
-        <code>&lt;input type="radio"name="size" value="S"&gt;S</code>
+        <code>&lt;label for="small"&gt;</code>
+        <code>&lt;input type="radio"name="size" value="S" id="small"&gt;S</code>
         <code>&lt;/label&gt;&lt;br&gt;</code>
         <code>&lt;br&gt;</code>
         <code>&lt;/fieldset&gt;</code>
@@ -180,14 +180,14 @@
         <form class ="small-form-box">
           <fieldset class="radio-box">
             <p>Choose your size:</p>
-            <label>
-              <input type="radio" name="size" value="S">S
+            <label for="small">
+              <input type="radio" name="size" value="S" id="small">S
             </label><br>
-            <label>
-              <input type="radio" name="size" value="M">M
+            <label for="medium">
+              <input type="radio" name="size" value="M" id="medium">M
             </label><br>
-            <label>
-              <input type="radio" name="size" value="L">L
+            <label for="large">
+              <input type="radio" name="size" value="L" id="large">L
             </label><br>
             <br>
           </fieldset>
@@ -327,14 +327,14 @@
         <h4>Rendered element:</h4>
         <form>
           <fieldset class="input-box">
-            <label>Card Name:</label>
-            <input type="text"><br><br>
-            <label>Card Number:</label>
-            <input type="text"><br><br>
-            <label>Expiration date:</label>
-            <input type="text"><br><br>
-            <label>CVV Code:</label>
-            <input type="text"><br><br>
+            <label for="card-name">Card Name:</label>
+            <input type="text" id="card-name"><br><br>
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number"><br><br>
+            <label for="expire-date">Expiration date:</label>
+            <input type="text" id="expire-date"><br><br>
+            <label for="cvv">CVV Code:</label>
+            <input type="text" id="cvv"><br><br>
           </fieldset>
 
           <fieldset class="button-select">
