@@ -21,32 +21,44 @@ div {
   margin: 1rem;
 }
 
+.header-container{
+  height: 0%;
+}
+
 .nav-container {
-  height: 50px;
-  width: 80vw;
-  margin: 2rem;
+  /* height: 50px;
+  width: 80vw; */
+  flex-grow: 2;
 }
 
 .search-container{
   justify-content: flex-end;
-  width: 90vw;
+  flex-grow: 1;
+  margin: 3rem 0;
 }
 
-.outter-container{
+.product-outter-container{
   justify-content: space-around;
 }
 
+.outter-container{
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .product-container{
-  width:80vw;
+  display:inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+  width: 80%;
 }
 
 .product-block {
-  height: 300px;
-  width: 200px;
-  margin: 2rem;
+  flex-direction: column;
 }
 
-.product-container .product-block img {
+ .product-block img {
   height: 300px;
   width: 200px;
 }
@@ -56,13 +68,19 @@ div {
 }
 
 .list-container{
-  width: 100px;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
+  flex-grow: 2;
 }
 
-.list-container .list-block{
+.list-container{
   flex-direction: column;
+}
+
+.list-block{
+  flex-direction: row;
+  border: 1px solid black;
+  justify-content: center;
 }
 
 .list-container .list-block p{
@@ -75,28 +93,73 @@ div {
   align-content: flex-start;
 }
 
-
-
 .label-container{
   padding: 0.5rem;
 }
 
 .checkout-container {
-    -webkit-justify-content: flex-start;
-    -ms-justify-content: flex-start;
+    flex-direction: column;
     justify-content: flex-start;
 }
 
-.cart-container div {
-  -ms-flex: 50%;
+.cart-container{
+  /* -ms-flex: 50%;
   flex: 50%;
+  margin-bottom: 5rem; */
+  flex-direction: column;
+}
 
-  margin-bottom: 5rem;
+.cart-container-row{
+  flex-direction:row;
+  justify-content: center;
+}
+
+.cart-container-items{
+  flex-direction: column;
+  background-color: white;
+  flex-grow: 2;
+}
+
+.cart-container-total-price{
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+  background-color: white;
+  height: 0%;
+}
+
+.cart-total-price{
+    border: 1px solid black;
+    text-align: right;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.cart-items{
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.cart-image img{
+  height: 300px;
+  width: 200px;
+
+}
+
+.cart-items div:last-child{
+  margin-left: auto;
+}
+
+.cart-list li{
+  margin: 1rem 0;
 }
 
 .billing-container {
   -ms-flex: 50%;
   flex: 50%;
+  flex-direction: row;
+  justify-content:center;
 }
 
 .payment-container {
@@ -108,9 +171,30 @@ div {
   flex: 100%;
 }
 
-  form {
-    width: 800px;
-  }
+.footer-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-container nav{
+  font-size: 13px;
+
+}
+
+footer{
+  margin: 5rem;
+  background-color: #b3b3b3;
+}
+
+.footer-text{
+  flex-direction: row;
+  justify-content: center;
+  font-size: 13px;
+}
+
+form {
+  width: 800px;
+}
 
   @media (max-width: 900px) {
     form {
@@ -125,7 +209,7 @@ div {
     width: 300px;
   }
 
-  .nav-container {
+  /* .nav-container {
     height: 200px;
     width: 60vw;
   }
@@ -133,8 +217,30 @@ div {
   .search-container{
     justify-content: flex-start;
     width: 90vw;
+  } */
+}
+
+@media (max-width:1400px) {
+  .product-container{
+    order: 2;
+  }
+
+  .category-list li{
+    float:left;
+    font-size: 25px;
+  }
+
+  .product-container{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .product-block ul{
+    font-size: 20px;
   }
 }
+
+
 /* Resource: IAT339 Week 3 Coding Tutorial
              IAT339 Week 3 Lab Assignment
              https://jonitrythall.com/flexbox-cheatsheet */
