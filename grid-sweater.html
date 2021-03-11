@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
 
-  <title>P02 - Product Listing Template</title>
+  <title>P02 - Grid Sweater</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
@@ -22,20 +22,21 @@
 
 <body class="bg-color">
   <header>
-    <h1>P02 - Company</h1>
-
-    <div class="nav-container">
-      <nav>
-        <a class="button-nav" href="#">Home</a>
-        <a class="button-nav" href="product_listing.html">All</a>
-        <a class="button-nav" href="#">New</a>
-        <a class="button-nav" href="#">Sale</a>
-        <a class="button-nav" href="#">Womens</a>
-        <a class="button-nav" href="#">Mens</a>
-        <a class="button-nav" href="#">Kids</a>
-        <a class="button-nav" href="contact.html">Contact</a>
-        <a class="button-nav" href="checkout.html">Checkout</a>
-      </nav>
+    <!-- <h1>P02 - Company</h1> -->
+    <a href="#"><img src="img/Company-Logo.png" alt="Company Logo"></a>
+    <div class="header-container">
+      <div class="nav-container">
+        <nav>
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="product_listing.html">All</a>
+          <a class="button-nav" href="#">New</a>
+          <a class="button-nav" href="#">Sale</a>
+          <a class="button-nav" href="#">Womens</a>
+          <a class="button-nav" href="#">Mens</a>
+          <a class="button-nav" href="#">Kids</a>
+          <a class="button-nav" href="contact.html">Contact</a>
+          <a class="button-nav" href="checkout.html">Checkout</a>
+        </nav>
       </div>
 
       <div class="search-container">
@@ -46,11 +47,12 @@
           <input class="btn" type="submit" value="Search">
         </fieldset>
       </div>
+    </div>
   </header>
 
   <section>
 
-  <div class="outter-container">
+  <div class="product-outter-container">
 
     <div class="img-block">
         <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
@@ -60,11 +62,9 @@
       <div class="info-block">
         <p class="info">Grid Sweater (White)</p>
         <p class="info">$16.99</p>
-        <p class="info"><u>Details</u></p>
         <p class="info">Clean lines, a boxy fit and lack of unnecessary details, this classy grid top is a great sample to show the beauty of simplicity. Crafted from mid-weight texture fabrication and cut in streamlined shape, this item is a must-have to a minimalist wardrobe. </p>
-
-
-        <select class="sizes" name="sizes">
+        <p class="info">Size:
+        <select class="sizes" name="sizes" id="info-select">
           <option value="XS">XS</option>
           <option value="S">S</option>
           <option value="M">M</option>
@@ -72,6 +72,7 @@
           <option value="XL">XL</option>
           <option value="XXL">XXL</option>
         </select>
+      </p>
 
         <p class="info">Quantity:  <input type="number" name="quantity" class="quantity" value="1"  min="1" max="99"></p>
 
@@ -83,4 +84,26 @@
   </div>
 
   </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-nav">
+        <nav>
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="product_listing.html">All</a>
+          <a class="button-nav" href="#">New</a>
+          <a class="button-nav" href="#">Sale</a>
+          <a class="button-nav" href="#">Womens</a>
+          <a class="button-nav" href="#">Mens</a>
+          <a class="button-nav" href="#">Kids</a>
+          <a class="button-nav" href="contact.html">Contact</a>
+          <a class="button-nav" href="checkout.html">Checkout</a>
+          <a class="button-nav" href="index.html">Style Guide</a>
+        </nav>
+      </div>
+
+      <div class="footer-text">
+        <p>SIMPLE SYTLE SIAT 2021</p>
+      </div>
+  </footer>
 </body>

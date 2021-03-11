@@ -208,6 +208,8 @@ label {
   display: inline-block;
   padding: 1.5rem;
   padding-left: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .button-select .btn {
@@ -258,18 +260,33 @@ label {
   font-weight: bold;
   font-size: 1rem;
   padding: 15px 25px;
-  margin: 2rem 0;
+}
+
+.del-btn{
+  display: block;
+  width: 100%;
+  background: linear-gradient(#355E3B, #51905A);
+  border: 0;
+  color: #F5F5F5;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px;
 }
 
 .sizes{
   width: 50%;
-  margin: 1rem 0;
+
   background: #fff;
   border: 1px solid #989898;
   box-shadow: inset 0 1px 1px rgb(0 0 0 / 10%);
   color: #1e1e1e;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
+}
+
+#info-select{
+  margin: 1rem 0;
 }
 
 .quantity{
@@ -286,6 +303,48 @@ label {
 .info{
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
+}
+
+ul{
+  list-style: none;
+}
+
+.product-text {
+  font-size: 30px;
+}
+
+table, .price-text{
+  font-size:20px;
+}
+
+td{
+  padding: 3px;
+  text-align: left;
+}
+
+.category-list{
+  padding: 0;
+  text-align: right;
+}
+
+.category-header{
+  display: inline-block;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  color: #1e1e1e;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-size: 25px;
+}
+
+.product-block ul{
+    padding-left: 0;
+}
+
+.img-block img{
+  width:600px;
 }
 
 /* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
@@ -316,6 +375,5 @@ p {
   margin-top: 0;
   max-width: 100%;
 }
-
 /* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
 /* Resource for form, input, and label:https://learn.shayhowe.com/html-css/building-forms/ */
