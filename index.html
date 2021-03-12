@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>P02 - Style Guide</title>
+  <title>Simple Styles - Style Guide</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 
 <body>
   <header>
-    <h1>P02 - Style Guide</h1>
+    <a href="#"><img src="img/Company-Logo.png" alt="Company Logo"></a>
 
     <p>This company manufactures and sells clothing in a minimalistic style. They strive to produce clothes that are appealing and affordable with durable, yet inexpsensive materials. It is ideal for customers who like to keep things basic, while staying fashionable in neutral tones.</p>
 
@@ -32,6 +32,10 @@
       <a class="button-nav" href="#citations">Citations</a>
     </nav>
   </header>
+
+  <section>
+  <h1>Style Guide</h1>
+  </section>
 
   <!-- BRANDING SECTION // -->
   <section id="branding">
@@ -204,10 +208,18 @@
         <p>.image-link</p>
 
         <h4>Sample code:</h4>
-        <code>&lt;a class="image-link" href="#";&lt;img src="https://placeholder.com/200x300" alt="Image Link"</code>
+        <code>&lt;div class="product-container"&gt;</code>
+        <code>&lt;div class="product-block"&gt;</code>
+        <code>&lt;a class="image-link" href="#";&lt;img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"&gt;</code>
+        <code>&lt;/div&gt;</code>
+        <code>&lt;/div&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
+        <div class="product-container">
+        <div class="product-block">
+        <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
+        </div>
+      </div>
 
         <!-- Resource: https://www.w3schools.com/html/html_images.asp
         img source: https://placeholder.com/-->
@@ -278,18 +290,16 @@
       <section class="element">
         <h3>Main Navigation</h3>
 
-        <h4>Rendered element:</h4>
-
         <nav>
-          <div class="dropdown">
-            <a class="button-nav" href="#">Sale</a>
-            <div class="dropdown-content">
-              <a href="#">Women</a>
-              <a href="#">Men</a>
-              <a href="#">Unisex</a>
-            </div>
-          </div>
-
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="product_listing.html">All</a>
+          <a class="button-nav" href="product_listing.html">New</a>
+          <a class="button-nav" href="product_listing.html">Sale</a>
+          <a class="button-nav" href="product_listing.html">Womens</a>
+          <a class="button-nav" href="product_listing.html">Mens</a>
+          <a class="button-nav" href="product_listing.html">Kids</a>
+          <a class="button-nav" href="contact.html">Contact</a>
+          <a class="button-nav" href="checkout.html">Checkout</a>
         </nav>
 
         <!-- Resource: https://www.w3schools.com/howto/howto_css_dropdown.asp  -->
@@ -298,24 +308,41 @@
       <section class="element">
         <h3>Product/Service Listing</h3>
 
-        <h4>Rendered element:</h4>
-
-        <div class="product-container">
-          <div class="product-block">
-            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
-            <p><a class="text-link" href="#">Womens Pants (Black)</a><br>$16.99</p>
-          </div>
-          <div class="product-block">
-            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
-            <p><a class="text-link" href="#">Womens Shirt (White)</a><br>$5.99</p>
-          </div>
-          <div class="product-block">
-            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
-            <p><a class="text-link" href="#">Unisex Jacket (Gray)</a><br>$26.99</p>
-          </div>
-          <div class="product-block">
-            <a class="image-link" href="#"><img src="https://via.placeholder.com/200x300" alt="Image Link"></a>
-            <p><a class="text-link" href="#">Mens Pants (Gray)</a><br>$18.99</p>
+        <div class="outter-container">
+          <div class="product-container">
+            <div class="product-block">
+              <ul>
+                <li ><a class="image-link" href="grid-sweater.html"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a></li>
+                <li ><a class="text-link" href="grid-sweater.html">Grid Sweater (White)</a></li>
+                <li>$16.99</li>
+                <li><input class="add-to-cart-btn" type="submit" value="Add to Cart"></li>
+              </ul>
+            </div>
+            <div class="product-block">
+              <ul>
+                <li><a class="image-link" href="grid-sweater.html"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/10210c.122.jpg" alt="Mesh V-Neck"></a></li>
+                <li><a class="text-link" href="grid-sweater.html">Womens Mesh Top (Black)</a></li>
+                <li>$9.99</li>
+                <li><input class="add-to-cart-btn" type="submit" value="Add to Cart"></li>
+              </ul>
+            </div>
+            <div class="product-block">
+              <ul>
+                <li><a class="image-link" href="grid-sweater.html"><img src="https://img.ltwebstatic.com/images3_pi/2020/06/02/159109123750314c7aa6de0957899b416cbc360a85_thumbnail_900x.webp" alt="Dress"></a></li>
+                <li><a class="text-link" href="grid-sweater.html">Womens Dress (Black)</a></li>
+                <li>$12.99</li>
+                <li><input class="add-to-cart-btn" type="submit" value="Add to Cart"></li>
+              </ul>
+            </div>
+            <div class="product-block">
+              <ul>
+                <li><a class="image-link" href="grid-sweater.html"><img src="https://img.ltwebstatic.com/images2_pi/2019/04/24/15560964993199197621_thumbnail_900x1199.webp" alt="Sunflower Tee"></a></li>
+                <li><a class="text-link" href="grid-sweater.html">Kids Sunflower Tee</a></li>
+                <li>$6.99</li>
+                <li><input class="add-to-cart-btn" type="submit" value="Add to Cart"></li>
+              </ul>
+            </div>
+            <div class="product-block">
           </div>
         </div>
 
@@ -324,8 +351,32 @@
       <section class="element">
         <h3>Payment Form</h3>
 
-        <h4>Rendered element:</h4>
         <form>
+          <fieldset class="input-box">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"><br><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name"><br><br>
+            <label for="email">E-Mail Address:</label>
+            <input type="text" id="email"><br><br>
+            <label for="phone">Phone Number (optional):</label>
+            <input type="text" id="phone"><br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address"><br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city"><br><br>
+            <label for="state-province">State/Province:</label>
+            <input type="text" id="state-province"><br><br>
+            <label for="country">Country:</label>
+            <input type="text" id="country"><br><br>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip"><br><br>
+          </fieldset>
+
+          <section>
+            <h3>Card Information</h3>
+          </section>
+
           <fieldset class="input-box">
             <label for="card-name">Card Name:</label>
             <input type="text" id="card-name"><br><br>
@@ -338,8 +389,9 @@
           </fieldset>
 
           <fieldset class="button-select">
-            <input class="btn" type="submit" value="Submit Payment">
+            <input class="btn" type="submit" value="Place Your Order">
           </fieldset>
+
         </form>
 
       </section>
@@ -347,28 +399,98 @@
       <section class="element">
         <h3>Checkout Cart</h3>
 
-        <h4>Rendered element:</h4>
-        <ol>
-          <li>
-            <p><a class="text-link" href="#">Unisex Sweatshirt</a><br>
-              Colour: White<br>
-              Size: M<br>
-              Price: $7.99</p>
-            </li>
+        <div class="cart-container-row">
+          <div class="cart-container-items">
+            <div class="cart-items">
 
-            <li>
-              <p><a class="text-link" href="#">Unisex Sweatpants</a><br>
-                Colour: Black<br>
-                Size: M<br>
-                Price: $12.99</p>
-              </li>
-            </ol>
+              <div class="cart-image">
+                <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
+              </div>
 
-            <p>Total: $20.98</P>
+              <div class="cart-details">
+                <ul class="cart-list">
+                  <li class="product-text"><a class="text-link" href="grid-sweater.html">Grid Sweater</a></li>
+                  <li>Colour: White</li>
+                  <li>Size:
+                    <select class="sizes" name="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                  </li>
+                  <li>Quantity: <input type="number" name="quantity" class="quantity" value="1"  min="1" max="99"></li>
 
-              <fieldset class="button-select">
-                <input class="btn" type="submit" value="Proceed to Checkout">
-              </fieldset>
+                </ul>
+              </div>
+
+              <div class="cart-price">
+                <ul class="cart-list">
+                  <li class="price-text">Price: $16.99</li>
+                  <li><input class="del-btn" type="submit" value="Delete"></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="cart-items">
+
+              <div class="cart-image">
+                <a class="image-link" href="#"><img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F2e%2F0a%2F2e0a993853cc08edacfb45786a04aa0f38dc2f42.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_hoodiessweatshirts_hoodies%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="Grid Sweater"></a>
+              </div>
+
+              <div class="cart-details">
+                <ul class="cart-list">
+                  <li class="product-text"><a class="text-link" href="grid-sweater.html">Mens Hoodie</a></li>
+                  <li>Colour: Gray</li>
+                  <li>Size:
+                    <select class="sizes" name="sizes">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                  </li>
+                  <li>Quantity: <input type="number" name="quantity" class="quantity" value="1"  min="1" max="99"></li>
+                </ul>
+              </div>
+
+              <div class="cart-price">
+                <ul class="cart-list">
+                  <li class="price-text">Price: $16.99</li>
+                  <li><input class="del-btn" type="submit" value="Delete"></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="cart-container-total-price">
+            <div class="cart-total-price">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Items:</td>
+                      <td>$33.98</td>
+                    </tr>
+                    <tr>
+                      <td>Tax:</td>
+                      <td>$4.08</td>
+                    </tr>
+                    <tr>
+                      <td>Total:</td>
+                      <td>$38.06</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
             </section>
 
@@ -396,5 +518,28 @@
 
           </section>
 
-        </body>
-        </html>
+          <footer>
+            <div class="footer-container">
+              <div class="footer-nav">
+                <nav>
+                  <a class="button-nav" href="#">Home</a>
+                  <a class="button-nav" href="product_listing.html">All</a>
+                  <a class="button-nav" href="product_listing.html">New</a>
+                  <a class="button-nav" href="product_listing.html">Sale</a>
+                  <a class="button-nav" href="product_listing.html">Womens</a>
+                  <a class="button-nav" href="product_listing.html">Mens</a>
+                  <a class="button-nav" href="product_listing.html">Kids</a>
+                  <a class="button-nav" href="contact.html">Contact</a>
+                  <a class="button-nav" href="checkout.html">Checkout</a>
+                  <a class="button-nav" href="index.html">Style Guide</a>
+                  <a class="button-nav" href="index.html#citations">Citations</a>
+                </nav>
+              </div>
+
+              <div class="footer-text">
+                <p>SIMPLE SYTLES SIAT 2021</p>
+              </div>
+            </footer>
+
+          </body>
+          </html>

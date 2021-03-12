@@ -1,3 +1,4 @@
 P02-Company
 
-# Jason is here.
+#This is a project for IAT339 at Simon Fraser University.
+#Made by Jeryl Villasoto and Jason Yang.

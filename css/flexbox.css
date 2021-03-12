@@ -34,7 +34,7 @@ div {
 .search-container{
   justify-content: flex-end;
   flex-grow: 1;
-  margin: 3rem 0;
+  margin: 2.5rem 0;
 }
 
 .product-outter-container{
@@ -71,6 +71,7 @@ div {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
   flex-grow: 2;
+
 }
 
 .list-container{
@@ -79,8 +80,10 @@ div {
 
 .list-block{
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid #989898;
   justify-content: center;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .list-container .list-block p{
@@ -115,21 +118,26 @@ div {
 }
 
 .cart-container-items{
+  border: 1px solid #989898;
   flex-direction: column;
   background-color: white;
   flex-grow: 2;
+  border-radius: 10px;
 }
 
 .cart-container-total-price{
+  border: 1px solid #989898;
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-start;
   background-color: white;
   height: 0%;
+  border-radius: 10px;
 }
 
 .cart-total-price{
-    border: 1px solid black;
+    border: 1px solid #989898;
+    border-radius: 5px;
     text-align: right;
     flex-direction: row;
     justify-content: center;
@@ -138,7 +146,8 @@ div {
 
 .cart-items{
   flex-direction: row;
-  border: 1px solid black;
+  border: 1px solid #989898;
+  border-radius: 5px;
 }
 
 .cart-image img{
@@ -182,8 +191,8 @@ div {
 }
 
 footer{
-  margin: 5rem;
-  background-color: #b3b3b3;
+  background-color: #989898;
+  margin-top: 5rem;
 }
 
 .footer-text{

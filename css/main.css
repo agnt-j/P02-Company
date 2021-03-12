@@ -38,6 +38,7 @@ form{
   font-family:'Nunito', sans-serif;
   overflow: hidden;
   width: 250px;
+  background-color: white;
 }
 
 fieldset {
@@ -88,6 +89,7 @@ textarea {
   transition-property: color;
   transition-duration: 0.5s;
   font-weight: bold;
+  font-size: 1.25em;
 }
 
 .button-nav:hover, .button-nav:focus {
@@ -355,6 +357,7 @@ TEXT ELEMENTS -------------------
 
 h1 {
   font-size: 2.5em;
+  margin-bottom: 0;
 }
 
 h2 {
