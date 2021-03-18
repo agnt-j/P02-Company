@@ -4,8 +4,8 @@
 <head>
 
   <meta charset="utf-8">
-
-  <title>Simple Styles - Grid Sweater</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P02 - Grid Sweater</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
@@ -47,29 +47,39 @@
     </div>
   </header>
 
-  <section>
 
-    <div class="product-outter-container">
 
+  <div class="product-outter-container">
+
+    <div class="multiple-img">
       <div class="img-block">
-        <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
+          <a class="image-link" href="#"><img src="https://ca.chicwish.com/media/catalog/product/cache/789a34736ead3066d85296b038a5aa03/1/0/1020c.10.jpg" alt="Grid Sweater"></a>
       </div>
 
-      <div class="sales-info">
-        <div class="info-block">
-          <p class="info">Grid Sweater (White)</p>
-          <p class="info">$16.99</p>
-          <p class="info">Clean lines, a boxy fit and lack of unnecessary details, this classy grid top is a great sample to show the beauty of simplicity. Crafted from mid-weight texture fabrication and cut in streamlined shape, this item is a must-have to a minimalist wardrobe. </p>
-          <p class="info">Size:
-            <select class="sizes" name="sizes" id="info-select">
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
-          </p>
+      <div class="imgs-container">
+          <a class="image-link" href="#"><img src="https://di2ponv0v5otw.cloudfront.net/posts/2019/02/17/5c6a1f6a035cf155d7d98353/m_5c6a1f81aa877037feafb0ad.jpg" alt="Grid Sweater"></a>
+          <a class="image-link" href="#"><img src="https://di2ponv0v5otw.cloudfront.net/posts/2019/02/17/5c6a1f6a035cf155d7d98353/m_5c6a1f863c9844d6f3d311a3.jpg" alt="Grid Sweater"></a>
+          <a class="image-link" href="#"><img src="https://di2ponv0v5otw.cloudfront.net/posts/2019/02/17/5c6a1f6a035cf155d7d98353/m_5c6a1f849fe486f819c332e9.jpg" alt="Grid Sweater"></a>
+      </div>
+    </div>
+
+
+    <div class="sales-info">
+      <div class="info-block">
+        <p class="info" id="info-name">Grid Sweater (White)</p>
+        <p class="info">$16.99</p>
+        <p class="info">Clean lines, a boxy fit and lack of unnecessary details, this classy grid top is a great sample to show the beauty of simplicity. Crafted from mid-weight texture fabrication and cut in streamlined shape, this item is a must-have to a minimalist wardrobe. </p>
+        <img class="rating" src="img/rating.png" alt="4_star_rating">
+        <p class="info">Size:
+        <select class="sizes" name="sizes" id="info-select">
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+        </p>
 
           <p class="info">Quantity:  <input type="number" name="quantity" class="quantity" value="1"  min="1" max="99"></p>
 
@@ -80,7 +90,9 @@
 
     </div>
 
-  </section>
+  </div>
+
+
 
   <footer>
     <div class="footer-container">

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Styles - Billing</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <!-- <h1>P02 - Company</h1> -->
+    <a href="#"><img src="img/Company-Logo.png" alt="Company Logo"></a>
+    <div class="header-container">
+      <div class="nav-container">
+        <nav>
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="product_listing.html">All</a>
+          <a class="button-nav" href="#">New</a>
+          <a class="button-nav" href="#">Sale</a>
+          <a class="button-nav" href="#">Womens</a>
+          <a class="button-nav" href="#">Mens</a>
+          <a class="button-nav" href="#">Kids</a>
+          <a class="button-nav" href="contact.html">Contact</a>
+          <a class="button-nav" href="checkout.html">Checkout</a>
+        </nav>
+      </div>
+
+      <div class="search-container">
+        <fieldset class="search-box">
+          <input type="text" placeholder="Search"><br><br>
+        </fieldset>
+        <fieldset class="search-button">
+          <input class="btn" type="submit" value="Search">
+        </fieldset>
+      </div>
+    </div>
+  </header>
+
+  <div class="checkout-container">
+
+    <div class="cart-container">
+
+      <h2>Billing Information</h2>
+      <div class="cart-container-row">
+        <div class="billing-container">
+            <form class="bill">
+              <div class="bill-fieldset">
+                <fieldset class="input-box">
+                  <h3>Billing Address</h3>
+                  <label for="first-name">First Name:</label>
+                  <input type="text" id="first-name"><br><br>
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" id="last-name"><br><br>
+                  <label for="email">E-Mail Address:</label>
+                  <input type="text" id="email"><br><br>
+                  <label for="phone">Phone Number (optional):</label>
+                  <input type="text" id="phone"><br><br>
+                  <label for="address">Address:</label>
+                  <input type="text" id="address"><br><br>
+                  <label for="city">City:</label>
+                  <input type="text" id="city"><br><br>
+                  <label for="state-province">State/Province:</label>
+                  <input type="text" id="state-province"><br><br>
+                  <label for="country">Country:</label>
+                  <input type="text" id="country"><br><br>
+                  <label for="zip">Zip Code:</label>
+                  <input type="text" id="zip"><br><br>
+                </fieldset>
+              </div>
+
+              <div class="bill-fieldset">
+                <fieldset class="input-box">
+                  <h3>Card Information</h3>
+                  <label for="card-name">Card Name:</label>
+                  <input type="text" id="card-name"><br><br>
+                  <label for="card-number">Card Number:</label>
+                  <input type="text" id="card-number"><br><br>
+                  <label for="expire-date">Expiration date:</label>
+                  <input type="text" id="expire-date"><br><br>
+                  <label for="cvv">CVV Code:</label>
+                  <input type="text" id="cvv"><br><br>
+                </fieldset>
+              </div>
+            </form>
+        </div>
+
+        <div class="cart-container-total-price" id="billing-table">
+          <div class="cart-total-price">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="text-td">Items:</td>
+                    <td class="num-td">$33.98</td>
+                  </tr>
+                  <tr>
+                    <td class="text-td">Tax:</td>
+                    <td class="num-td">$4.08</td>
+                  </tr>
+                  <tr>
+                    <td class="text-td">Total:</td>
+                    <td class="num-td">$38.06</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="btn-td"><fieldset class="button-select">
+                      <a href="purchased.html"><input class="btn" type="submit" value="Place Your Order"></a>
+                    </fieldset></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="btn-td"><fieldset class="button-select">
+                      <a href="checkout.html"><input class="btn" type="submit" value="Return To Cart"></a>
+                    </fieldset></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-nav">
+        <nav>
+          <a class="button-nav" href="#">Home</a>
+          <a class="button-nav" href="product_listing.html">All</a>
+          <a class="button-nav" href="#">New</a>
+          <a class="button-nav" href="#">Sale</a>
+          <a class="button-nav" href="#">Womens</a>
+          <a class="button-nav" href="#">Mens</a>
+          <a class="button-nav" href="#">Kids</a>
+          <a class="button-nav" href="contact.html">Contact</a>
+          <a class="button-nav" href="checkout.html">Checkout</a>
+          <a class="button-nav" href="index.html">Style Guide</a>
+        </nav>
+      </div>
+
+      <div class="footer-text">
+        <p>SIMPLE SYTLE SIAT 2021</p>
+      </div>
+  </footer>
+</body>
