@@ -101,7 +101,6 @@ textarea {
   color: #1e1e1e;
   transition-property: color;
   transition-duration: 0.5s;
-  font-size: 25px;
 
 }
 
@@ -325,7 +324,7 @@ ul{
 
 table, .price-text{
   font-size:20px;
-  
+
 }
 
 td{
@@ -416,6 +415,7 @@ p {
   font-family:'Nunito', sans-serif;
   margin-top: 0;
   max-width: 100%;
+  font-size: 1.5em;
 }
 /* Resource for dropdown: https://www.w3schools.com/howto/howto_css_dropdown.asp */
 /* Resource for form, input, and label:https://learn.shayhowe.com/html-css/building-forms/ */
